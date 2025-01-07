@@ -1,0 +1,28 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 395, in script
+    if ((blacksmithDone == False) and ((easy) or (medium))):
+  File "game/script.rpy", line 401, in <module>
+    elif ((blacksmithBruce == False) and (hard and (bruceDeny == False))):
+NameError: name 'blacksmithBruce' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 395, in script
+    if ((blacksmithDone == False) and ((easy) or (medium))):
+  File "/Users/apzha/Downloads/renpy/renpy-8.3.4-sdk/renpy/ast.py", line 1849, in execute
+    if renpy.python.py_eval(condition):
+  File "/Users/apzha/Downloads/renpy/renpy-8.3.4-sdk/renpy/python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "/Users/apzha/Downloads/renpy/renpy-8.3.4-sdk/renpy/python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 401, in <module>
+    elif ((blacksmithBruce == False) and (hard and (bruceDeny == False))):
+NameError: name 'blacksmithBruce' is not defined
+
+macOS-15.0-arm64-arm-64bit arm64
+Ren'Py 8.3.4.24120703
+The Echoes of Gender 1.0
+Fri Dec 13 01:56:08 2024
